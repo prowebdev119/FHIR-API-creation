@@ -17,11 +17,9 @@ const storage = multer.diskStorage({
   })
 const upload = multer({storage})
 
-//--[ENVIRONMENT CONFIGURATIONS]--\\
 dotenv.config({ path: "./config/config.env" });
 const PORT = process.env.PORT
 
-//--[DATABASE CONNECTION]--\\
 connectDatabase()
 
 
